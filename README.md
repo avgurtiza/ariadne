@@ -90,9 +90,15 @@ your-project/
 | Claude Code | `.claude/skills/` | — | — | Via AGENTS.md instructions | Via AGENTS.md instructions |
 | Gemini CLI | `.gemini/skills/` | — | — | Via GEMINI.md instructions | Via GEMINI.md instructions |
 
-## Ogham is Optional
+## Ogham Support (Optional)
 
-Works fully with just markdown. Ogham MCP adds semantic search, decision linking, and richer context. Skills skip silently if Ogham isn't configured.
+[Ogham MCP](https://github.com/ogham-mcp/ogham-mcp) is a specialized Model Context Protocol (MCP) server that provides structured, persistent memory for AI agents. While Ariadne works fully with just markdown files, Ogham adds:
+
+- **Semantic Search:** Quickly find relevant historical context or decisions without reading large files.
+- **Decision Linking:** Connects current tasks to the original rationale stored in memory.
+- **Cross-Session Persistence:** Richer context that survives even if local files are modified or deleted.
+
+The `session-bootstrap` and `session-checkpoint` skills are designed to detect if Ogham is available and will skip silently if it isn't configured. Use Ogham when you need your agent to remember the "why" behind complex architectural choices across long-running projects.
 
 ## Uninstall
 
