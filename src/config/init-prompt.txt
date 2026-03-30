@@ -1,0 +1,13 @@
+Read PROJECT-STATE.md and fill it in based on the codebase.
+
+Detect the stack from package.json, composer.json, Cargo.toml, go.mod, or similar config files. Identify the current development stage (alpha, beta, production, etc.).
+
+For Architecture Decisions: scan recent git commits, README, and config files to identify key technical decisions (auth approach, database, deployment, etc.). Write each as a 1-liner.
+
+For Active Work: check open issues, recent commits, TODO/FIXME comments, and any existing task files. List the top 3-5 items with status.
+
+For Known Gotchas: look for workaround comments, common error patterns in logs/tests, and platform-specific quirks. Add any you find.
+
+Keep each section concise. Decisions as 1-liners. Gotchas with brief descriptions. Don't overwrite the structure — just fill in the blanks.
+
+After filling it in, also store key decisions to Ogham (if available) using ogham_store_decision.
